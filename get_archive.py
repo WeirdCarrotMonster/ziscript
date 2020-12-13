@@ -6,7 +6,6 @@ import logging
 import os
 import pathlib
 import shutil
-import tempfile
 import urllib.error
 import urllib.request
 
