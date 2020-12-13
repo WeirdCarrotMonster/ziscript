@@ -2,14 +2,13 @@
 
 import argparse
 import glob
-import itertools
-import sys
 import ipaddress
+import itertools
 import logging
 import multiprocessing
+import sys
 
-
-logger = logging.getLogger(__file__)
+logger = logging.getLogger("dump_to_ips")
 
 
 parser = argparse.ArgumentParser(description="Extract IPs from zapret-info csv dumps")

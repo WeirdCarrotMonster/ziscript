@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 
 import argparse
-import sys
+import collections
+import decimal
+import functools
 import ipaddress
 import logging
-import decimal
-import collections
 import multiprocessing
-import functools
+import sys
 
-logger = logging.getLogger(__file__)
+logger = logging.getLogger("ips_to_subnets")
 
 parser = argparse.ArgumentParser(description="Group IPs to subnets")
 parser.add_argument(

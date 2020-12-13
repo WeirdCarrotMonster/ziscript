@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
 import argparse
-import sys
 import logging
+import sys
 
-logger = logging.getLogger(__file__)
+logger = logging.getLogger("ipset_build_delta")
 
 parser = argparse.ArgumentParser(description="Generate ipset update commands")
 parser.add_argument("ipset", type=str, help="Ipset name")
